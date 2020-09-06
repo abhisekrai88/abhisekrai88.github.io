@@ -1,3 +1,0 @@
-This is anew file im adding to test branching
-
-This is from branch 2
