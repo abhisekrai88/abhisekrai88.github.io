@@ -11,6 +11,6 @@
     padding: 50px;
     border: 1px solid red;
     background-color: orange;;
-    /* box-sizing: border-box; */
+    box-sizing: border-box; 
   }
   
