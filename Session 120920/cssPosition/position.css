@@ -3,3 +3,9 @@ div>[class*="box"]  {
     background-color: lightblue;
     padding: 20px;
 }
+div > div {
+    width: 25%;
+    float: left;
+    
+}
+
