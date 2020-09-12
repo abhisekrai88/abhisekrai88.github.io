@@ -1,16 +1,14 @@
 a:link {
     color:red;
 }
-
 a:visited {
     color: green;
   }
-
 a:hover {
     color: blue;
   }
 
-#table2 tr:nth-child(even) {background-color: #f2f2f2;}
+#table2 :nth-child(even){background-color: #f2f2f2;}
 
 
   
