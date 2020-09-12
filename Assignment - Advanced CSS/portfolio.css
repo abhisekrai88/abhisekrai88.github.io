@@ -9,3 +9,8 @@ a:visited {
 a:hover {
     color: blue;
   }
+
+#table2 tr:nth-child(odd) {background-color: #f2f2f2;}
+
+
+  
