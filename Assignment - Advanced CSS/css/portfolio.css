@@ -8,6 +8,27 @@ a:hover {
     color: blue;
   }
 
+#profilepicture {
+  position: relative;
+  text-align: left;
+  color: rgb(236, 17, 145);
+}
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 750px;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+}
 #table2 tr:nth-child(even){background-color: #f2f2f2;}
 #table3 {
   background-image: url(../beautiful-background-of-lines-with-gradients-vector.jpg);
