@@ -1,8 +1,16 @@
 body{
     display: grid;
-    
-    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.3fr 1fr 0.1fr;
+    grid-template-areas: "navigation navigation navigation" "mainheader mainheader mainheader"
+    ". contentbody .";
+        /*grid-column-gap: 10px;
+        grid-row-gap: 15px;*/
 }
+   
+    
+    
+
 a:link{
     color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -14,21 +22,27 @@ a:link{
     letter-spacing: 1px;
 }
 .navigation{
-    grid-template-columns: 3fr;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
     border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-bottom-color: rgba(0,0,0,.125);
+    /*border-bottom-width: 1px;
+    border-bottom-color: rgba(0,0,0,.125);*/
 }
 .mainheader{
-    grid-template-columns: 3fr;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
     background-color: #f5f8fa;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-bottom-color: rgba(0,0,0,.125);
-    padding-left: 32px;
+    /*padding-left: 32px;
     padding-right: 32px;
     padding-top: 32px;
-    padding-bottom: 32px; 
+    padding-bottom: 32px;*/
     text-align: center;
 }
 img.profilepicture{
@@ -41,45 +55,69 @@ img.profilepicture{
     border-radius: 100%;
 }
 .name{
-    margin-top: 0px;
-    margin-bottom: 8px;
+    /*margin-top: 0px;
+    margin-bottom: 8px;*/
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 700;
     font-size: 50px;
     letter-spacing: 1px;
 }
 .tagline{
-    margin-top: 0px;
-    margin-bottom: 12px;
+    /*margin-top: 0px;
+    margin-bottom: 12px;*/
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 700;
     font-size: 24px;
     letter-spacing: 1px;
 }
 .contentbody{
-    grid-template-columns: 3fr;
-    margin-left: 432px;
-    margin-right: 432px;
-    padding-top: 32px;
+    grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    /*padding-top: 32px;
     padding-bottom: 32px;
     padding-right: 32px;
-    padding-left: 32px; 
+    padding-left: 32px;*/ 
 }
 .aboutme{
-    
+    width: auto;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
     font-size: 26px;
     font-family:sans-serif ;
+    float: left;
+    
 }
 .para1{
-    
+    padding-left: 16px;
+    padding-right: 16px;
     width: 448px;
     height: 336px;
     text-align: justify;
-    font-family: sans-serif;    
+    font-family: sans-serif;
+     
 }
 .contact{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: 25%;
     float: right;
     font-family:sans-serif;
+    box-sizing: border-box;
+    
 }
 
     
