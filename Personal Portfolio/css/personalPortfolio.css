@@ -1,6 +1,5 @@
 body{
     display: grid;
-    grid-template-columns: auto auto auto;
     
     
 }
@@ -15,19 +14,13 @@ a:link{
     letter-spacing: 1px;
 }
 .navigation{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 1;
+    grid-template-columns: 3fr;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-bottom-color: rgba(0,0,0,.125);
 }
 .mainheader{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 2;
+    grid-template-columns: 3fr;
     background-color: #f5f8fa;
     border-bottom-style: solid;
     border-bottom-width: 1px;
@@ -64,10 +57,7 @@ img.profilepicture{
     letter-spacing: 1px;
 }
 .contentbody{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 3;
+    grid-template-columns: 3fr;
     margin-left: 432px;
     margin-right: 432px;
     padding-top: 32px;
@@ -76,14 +66,19 @@ img.profilepicture{
     padding-left: 32px; 
 }
 .aboutme{
+    
     font-size: 26px;
     font-family:sans-serif ;
 }
 .para1{
+    
+    width: 448px;
+    height: 336px;
     text-align: justify;
     font-family: sans-serif;    
 }
-.content{
+.contact{
+    float: right;
     font-family:sans-serif;
 }
 
