@@ -1,4 +1,9 @@
-
+body{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+    
+}
 a:link{
     color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -10,11 +15,19 @@ a:link{
     letter-spacing: 1px;
 }
 .navigation{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-bottom-color: rgba(0,0,0,.125);
 }
 .mainheader{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
     background-color: #f5f8fa;
     border-bottom-style: solid;
     border-bottom-width: 1px;
@@ -51,12 +64,27 @@ img.profilepicture{
     letter-spacing: 1px;
 }
 .contentbody{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
     margin-left: 432px;
     margin-right: 432px;
     padding-top: 32px;
     padding-bottom: 32px;
     padding-right: 32px;
     padding-left: 32px; 
+}
+.aboutme{
+    font-size: 26px;
+    font-family:sans-serif ;
+}
+.para1{
+    text-align: justify;
+    font-family: sans-serif;    
+}
+.content{
+    font-family:sans-serif;
 }
 
     
