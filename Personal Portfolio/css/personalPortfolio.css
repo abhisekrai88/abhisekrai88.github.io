@@ -14,7 +14,7 @@ a:link{
     border-bottom-width: 1px;
     border-bottom-color: rgba(0,0,0,.125);
 }
-.mainbody{
+.mainheader{
     background-color: #f5f8fa;
     border-bottom-style: solid;
     border-bottom-width: 1px;
@@ -49,6 +49,14 @@ img.profilepicture{
     font-weight: 700;
     font-size: 24px;
     letter-spacing: 1px;
-
 }
+.contentbody{
+    margin-left: 432px;
+    margin-right: 432px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-right: 32px;
+    padding-left: 32px; 
+}
+
     
