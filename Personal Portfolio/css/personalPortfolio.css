@@ -27,6 +27,7 @@ a:link{
     grid-row-start: 1;
     grid-row-end: 1;
     border-bottom-style: solid;
+    background-color: red;
     /*border-bottom-width: 1px;
     border-bottom-color: rgba(0,0,0,.125);*/
 }
@@ -71,6 +72,7 @@ img.profilepicture{
     letter-spacing: 1px;
 }
 .contentbody{
+    background-color: salmon;
     grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 3;
