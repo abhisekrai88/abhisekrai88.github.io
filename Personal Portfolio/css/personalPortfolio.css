@@ -19,7 +19,7 @@ a:link{
     text-decoration: transparent;
     text-decoration-color: black;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 16px;
     letter-spacing: 1px;
 }
 
@@ -51,6 +51,7 @@ a:link{
 }
 .sublist{
     margin-left: 30px;
+    font-size: 16px;
 }
 .mainheader{
     margin-top: 50px;
@@ -140,6 +141,35 @@ img.profilepicture{
     box-sizing: border-box;
     
 }
+footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+.social-links{
+    margin-top: 0%;
+    margin-right: 20px;
+    margin-left: 20px;
+    float: right;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: darkgray;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: flex;
+    list-style: none;
+    transition: ease-in-out 0.3s;
+    padding-inline-start: 0%;
+    font-size: 24px;
+    
+   
+}
+
+    
+
+
+
 
 @media only screen and (max-width: 600px) {
 
@@ -151,5 +181,6 @@ img.profilepicture{
     .tagline{
         font-size: 20px
     }
+   
     
  }    
