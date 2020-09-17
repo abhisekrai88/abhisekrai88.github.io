@@ -17,15 +17,34 @@ a:link{
     color: darkgray;
     font-family: "Poppins", sans-serif;
     text-decoration: unset;
-    
     width: 25px;
     font-weight: 700;
     font-size: 16px;
-    letter-spacing: 1px;
-    
-    
-   
+    letter-spacing: 1px; 
 }
+/*body a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    top: -27px;
+    left: 1200px;
+    background-color: #18d26e;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+  }*/
+  
+  /*body a:hover:before, body li:hover > a:before, body .active > a:before {
+    visibility: visible;
+    width: 25px;
+  }*/
+  
+  body a:hover, body .active > a, body li:hover > a {
+    color: rgb(255, 255, 255);
+    text-decoration: ivory;
+  }
 
 .navigation{
     max-width: 100%;
@@ -166,28 +185,7 @@ footer{
     transition: ease-in-out 0.3s;
     padding-inline-start: 0%;
     font-size: 24px;
-    
-   
 }
-.navigation a:hover{
-    visibility: visible;
-    width: 25px;
-}
-.navigation a:before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -4px;
-    left: 0;
-    background-color: #18d26e;
-    visibility: hidden;
-    width: 0px;
-    transition: all 0.3s ease-in-out 0s;}
-
-
-
-
 @media only screen and (max-width: 600px) {
 
     .navigation { 
@@ -198,6 +196,4 @@ footer{
     .tagline{
         font-size: 20px
     }
-   
-    
  }    
