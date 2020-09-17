@@ -53,9 +53,6 @@ a:link{
     grid-row-start: 1;
     grid-row-end: 1;
     border-bottom-style: solid;
-    /*background-color: rgb(221, 183, 113);*/
-    /*border-bottom-width: 1px;
-    border-bottom-color: rgba(0,0,0,.125);*/
 }
 .list{
     margin-top: 0%;
@@ -89,31 +86,32 @@ a:link{
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-bottom-color: transparent;
-    /*padding-left: 32px;
-    padding-right: 32px;
-    padding-top: 32px;
-    padding-bottom: 32px;*/
     text-align: left;
 }
-img.profilepicture{
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    height: 25%;
-    width: 11%;
-    border-radius: 100%;
-}
+
 .name{
     margin-bottom: 0%;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 50px;
     letter-spacing: 1px;
-}
+
+    color: #fff;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #949092, 0 0 40px #7c7679, 0 0 50px #8b888a, 0 0 60px #918b8e, 0 0 70px #888687;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #c2bbbf, 0 0 40px #e9dde3, 0 0 50px #5a5356, 0 0 60px #b9b2b6, 0 0 70px #726e70, 0 0 80px #7c787a;
+    }
+  }
 .tagline{
-    /*margin-top: 0px;
-    margin-bottom: 12px;*/
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 24px;
