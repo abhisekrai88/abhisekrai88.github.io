@@ -36,7 +36,7 @@ a:link{
     transition: all 0.3s ease-in-out 0s;
   }*/
   
-  /*body a:hover:before, body li:hover > a:before, body .active > a:before {
+  /*body a:hover:before, body li:hover > a:before, body :active > a:before {
     visibility: visible;
     width: 25px;
   }*/
