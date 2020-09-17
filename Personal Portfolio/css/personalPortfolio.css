@@ -1,9 +1,10 @@
 body{
-    background-image: url(../css/abi.jpeg), url(../css/depositphotos_182851898-stock-photo-white-smoke-on-a-black.jpg);
+    background-image: url(../css/abiblur.png), url(../css/radial-gradient.png);
     background-repeat: no-repeat;
-    background-blend-mode: overlay;
+    background-blend-mode: multiply;
     background-position: center;
-    background-size: 100%;
+    background-size: cover; 
+    max-width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.1fr 0.3fr 1fr 0.1fr;
@@ -12,13 +13,8 @@ body{
         /*grid-column-gap: 10px;
         grid-row-gap: 15px;*/
 }
-   
-    
-    
-
 a:link{
-    
-    color: black;
+    color: darkgray;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-decoration: transparent;
     text-decoration-color: black;
@@ -26,8 +22,9 @@ a:link{
     font-size: 20px;
     letter-spacing: 1px;
 }
+
 .navigation{
-    
+    max-width: 100%;
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -37,16 +34,37 @@ a:link{
     /*border-bottom-width: 1px;
     border-bottom-color: rgba(0,0,0,.125);*/
 }
+.list{
+    margin-top: 0%;
+    margin-right: 20px;
+    margin-left: 20px;
+    float: right;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: darkgray;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: flex;
+    list-style: none;
+    transition: ease-in-out 0.3s;
+    padding-inline-start: 0%;
+}
+.sublist{
+    margin-left: 30px;
+}
 .mainheader{
+    margin-top: 50px;
+    margin-bottom: 150px;
+    width: 100%;
+    color:darkgray;
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
     background-color: transparent;
-    
     border-bottom-style: solid;
     border-bottom-width: 1px;
-    border-bottom-color: rgba(0,0,0,.125);
+    border-bottom-color: transparent;
     /*padding-left: 32px;
     padding-right: 32px;
     padding-top: 32px;
@@ -63,9 +81,8 @@ img.profilepicture{
     border-radius: 100%;
 }
 .name{
-    /*margin-top: 0px;
-    margin-bottom: 8px;*/
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 0%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 700;
     font-size: 50px;
     letter-spacing: 1px;
@@ -73,13 +90,12 @@ img.profilepicture{
 .tagline{
     /*margin-top: 0px;
     margin-bottom: 12px;*/
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 700;
     font-size: 24px;
     letter-spacing: 1px;
 }
 .contentbody{
-    background-color: grey;
     opacity: 50%;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -87,19 +103,17 @@ img.profilepicture{
     grid-row-end: 4;
     max-width: 500px;
     float: left;
-    /*padding-top: 32px;
+    padding-top: 32px;
     padding-bottom: 32px;
     padding-right: 32px;
-    padding-left: 32px;*/ 
+    padding-left: 32px;
 }
 .aboutme{
     width: auto;
     padding-left: 16px;
     padding-right: 16px;
     font-size: 26px;
-    font-family:sans-serif ;
-    
-    
+    font-family:sans-serif ;   
 }
 .para1{
     text-overflow: inherit ;
@@ -127,4 +141,15 @@ img.profilepicture{
     
 }
 
+@media only screen and (max-width: 600px) {
+
+    .navigation { 
+       font-size: 2em; 
+       text-align: center;
+       float: none;
+    }
+    .tagline{
+        font-size: 20px
+    }
     
+ }    
