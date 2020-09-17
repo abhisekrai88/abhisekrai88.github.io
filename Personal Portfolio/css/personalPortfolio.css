@@ -15,12 +15,16 @@ body{
 }
 a:link{
     color: darkgray;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-decoration: transparent;
-    text-decoration-color: black;
+    font-family: "Poppins", sans-serif;
+    text-decoration: unset;
+    
+    width: 25px;
     font-weight: 700;
     font-size: 16px;
     letter-spacing: 1px;
+    
+    
+   
 }
 
 .navigation{
@@ -39,7 +43,7 @@ a:link{
     margin-right: 20px;
     margin-left: 20px;
     float: right;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Poppins", sans-serif;
     color: darkgray;
     font-weight: 700;
     font-size: 16px;
@@ -83,7 +87,7 @@ img.profilepicture{
 }
 .name{
     margin-bottom: 0%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 50px;
     letter-spacing: 1px;
@@ -91,7 +95,7 @@ img.profilepicture{
 .tagline{
     /*margin-top: 0px;
     margin-bottom: 12px;*/
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 24px;
     letter-spacing: 1px;
@@ -165,8 +169,21 @@ footer{
     
    
 }
-
-    
+.navigation a:hover{
+    visibility: visible;
+    width: 25px;
+}
+.navigation a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #18d26e;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;}
 
 
 
