@@ -130,4 +130,18 @@ body a:before {
     .tagline{
         font-size: 20px
     }
+    .picres {
+        height: 78%;
+        width: 100%;
+    }
+    .list{
+        margin-right: 0px;
+    
+    }
+    .subhead{
+        text-align: center;
+    }
+    .p1{
+        text-align: center;
+    }
  }    

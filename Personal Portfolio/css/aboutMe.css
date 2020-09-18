@@ -183,7 +183,7 @@ body a:before {
     color: darkgray;
     font-weight: 700;
     font-size: 16px;
-    letter-spacing: 66px;
+    letter-spacing: 33px;
     list-style: none;
     padding-inline-start: 0%;
     font-size: 24px;
@@ -198,6 +198,19 @@ body a:before {
        font-size: 2em; 
        text-align: center;
        float: none;
+    }
+    .list{
+        margin-right: 0px;
+    
+    }
+    .subhead{
+        text-align: center;
+    }
+    .p1{
+        text-align: center;
+    }
+    .faceshot{
+        padding-left: 35px;
     }
     .tagline{
         font-size: 20px
