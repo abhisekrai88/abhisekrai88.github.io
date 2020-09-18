@@ -17,7 +17,7 @@ a:link{
     color: darkgray;
     font-family: "Poppins", sans-serif;
     text-decoration: unset;
-    
+   
     font-weight: 700;
     font-size: 16px;
     letter-spacing: 1px; 
@@ -78,23 +78,6 @@ body a:before {
     font-size: 16px;
 }
 
-
-.contentbody{
-    background-color: black;
-    opacity: 80%;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    max-width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
-    
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-right: 32px;
-    padding-left: 32px;
-}
 .subhead{
     font-size: 14px;
     font-weight: 500;
@@ -114,80 +97,25 @@ body a:before {
     font-family: "Poppins", sans-serif;
     color: #fff;
 }
-.basicinfo{
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-    color: gray;
-}
-.faceshot{
-    height: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 250px; 
-}
-.info{
-    font-weight: 700;
-    font-size: 26px;
-    color: gray;
-    font-family: "Open Sans", sans-serif;
-}
-.tag{
-    margin-bottom: 8px;
-    margin-top: 0px;
-    font-stretch: expanded;
-}
-.listleft{
+.resume{
+    background-color: black;
+    opacity: 80%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
     
-    margin-right: -15px;
-    margin-left: -15px;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1.5;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-right: 32px;
+    padding-left: 32px; 
 }
-.listright{
-    
-    margin-right: -15px;
-    margin-left: -15px;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1.5;
-}
-.listleft>li{
-    padding-bottom: 10px;
-}
-.listright>li{
-    padding-bottom: 10px;
-}
-.p2{
-    text-overflow: inherit ;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 1.5;
-    font-family: "Open Sans", sans-serif;
-}
-.interest{
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-    color: gray;
-
-}
-.interestslinks{
-    margin-top: 0%;
-    margin-right: 20px;
-    margin-left: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: darkgray;
-    font-weight: 700;
-    font-size: 16px;
-    letter-spacing: 66px;
-    list-style: none;
-    padding-inline-start: 0%;
-    font-size: 24px;
-    
+.picres{
+    height: 800px;
+    width: 1000px;
 }
 
 
