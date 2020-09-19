@@ -44,9 +44,10 @@ a:link{
     transition: ease-in-out 0.3s;
     padding-inline-start: 0%;
 }
-.sublist{
+.sublist {
     margin-left: 30px;
     font-size: 16px;
+    
 }
 .active{
     margin-left: 30px;
@@ -89,8 +90,8 @@ a:link{
     padding-left: 32px; 
 }
 .picres{
-    height: 800px;
-    width: 1000px;
+    height: 100%;
+    width: 100%;
 }
 
 
@@ -113,10 +114,10 @@ a:link{
         margin-right: 0px;
     
     }
-  .list{
+  .sublist{
     margin-right: 49px;
   }
-    
+
     .subhead{
         text-align: center;
     }
