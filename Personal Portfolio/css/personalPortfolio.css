@@ -8,10 +8,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.1fr 0.3fr 1fr 0.1fr;
-    /*grid-template-areas: "navigation navigation navigation" "mainheader mainheader mainheader"
-    ". contentbody .";*/
-        /*grid-column-gap: 10px;
-        grid-row-gap: 15px;*/
+
 }
 a:link{
     color: darkgray;
