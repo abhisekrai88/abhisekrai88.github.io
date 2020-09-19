@@ -22,25 +22,8 @@ a:link{
     font-size: 16px;
     letter-spacing: 1px; 
 }
-body a:before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -4px;
-    top: -27px;
-    left: 1200px;
-    background-color: #18d26e;
-    visibility: hidden;
-    width: 0px;
-    transition: all 0.3s ease-in-out 0s;
-  }
   
-  body a:hover:before, body li:hover > a:before, body :active > a:before {
-    visibility: visible;
-    width: 25px;
-  }
-  
+
   body a:hover, body .active > a, body li:hover > a {
     color: rgb(255, 255, 255);
     text-decoration: ivory;
@@ -168,7 +151,7 @@ body a:before {
     font-family: "Open Sans", sans-serif;
 }
 .interest{
-    display: flex;
+    
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
@@ -176,6 +159,7 @@ body a:before {
 
 }
 .interestslinks{
+    text-align: center;
     margin-top: 0%;
     margin-right: 20px;
     margin-left: 20px;
@@ -183,7 +167,7 @@ body a:before {
     color: darkgray;
     font-weight: 700;
     font-size: 16px;
-    letter-spacing: 33px;
+    
     list-style: none;
     padding-inline-start: 0%;
     font-size: 24px;
@@ -214,5 +198,8 @@ body a:before {
     }
     .tagline{
         font-size: 20px
+    }
+    .interestslinks{
+        display: grid;
     }
  }    

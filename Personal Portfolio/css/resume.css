@@ -22,24 +22,7 @@ a:link{
     font-size: 16px;
     letter-spacing: 1px; 
 }
-body a:before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -4px;
-    top: -27px;
-    left: 1200px;
-    background-color: #18d26e;
-    visibility: hidden;
-    width: 0px;
-    transition: all 0.3s ease-in-out 0s;
-  }
-  
-  body a:hover:before, body li:hover > a:before, body :active > a:before {
-    visibility: visible;
-    width: 25px;
-  }
+
   
   body a:hover, body .active > a, body li:hover > a {
     color: rgb(255, 255, 255);
