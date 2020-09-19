@@ -19,6 +19,9 @@ a:link{
     font-size: 16px;
     letter-spacing: 1px; 
 }
+a:visited{
+    color: inherit;
+}
 
   
   body a:hover, body .active > a, body li:hover > a {
@@ -27,12 +30,15 @@ a:link{
   }
 
 .navigation{
+    height: fit-content;
+    color: darkgray;
     max-width: 100%;
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 1;
     border-bottom-style: solid;
+    border-bottom-color: black;
 }
 .list{
     margin-top: 0%;
