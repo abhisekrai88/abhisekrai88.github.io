@@ -3,10 +3,13 @@
     <head>
         <script>
             function Person(name, age){
+            console.log("Person Constructor");
             this.name = name;
+            console.log("Person Constructor called and name assigned");
             this.age = age;
+            console.log("Person Constructor called and age assigned");
             }
-
+            console.log("Create me as an instance of the Person class")
             var me = new Person("Abi", 32)
             var myWife = new Person("Natasha", 31)
         </script>
