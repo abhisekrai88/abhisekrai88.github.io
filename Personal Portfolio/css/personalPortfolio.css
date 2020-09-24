@@ -81,13 +81,13 @@ a:visited{
     font-weight: 700;
     font-size: 50px;
     letter-spacing: 1px;
-
+    
     color: #353531;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
     animation: glow 1s ease-in-out infinite alternate;
   }
-  
+ 
   @keyframes glow {
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #949092, 0 0 40px #7c7679, 0 0 50px #8b888a, 0 0 60px #918b8e, 0 0 70px #888687;
@@ -96,6 +96,10 @@ a:visited{
     to {
       text-shadow: 0 0 20px #fff, 0 0 30px #c2bbbf, 0 0 40px #e9dde3, 0 0 50px #5a5356, 0 0 60px #b9b2b6, 0 0 70px #726e70, 0 0 80px #7c787a;
     }
+    0%   {color:#353531;}
+    25%  {color: rgb(77, 77, 75);}
+    50%  {color: rgb(44, 44, 46);}
+    100% {color: rgb(11, 14, 11);}
   }
 .tagline{
     font-family: "Raleway", sans-serif;
