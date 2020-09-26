@@ -1,32 +1,28 @@
 <!DOCTYPE html>
-<html><head>
+<html>
+  <head>
     <style>
-       
-        div { 
-            width: 200px; 
-            height: 200px; 
-            background-color:blue; 
-            animation-name: example;
-            animation-duration: 10s;
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        animation-name: example;
+        animation-duration: 10s;
+      }
+
+      @keyframes example {
+        from {
+          background-color: red;
         }
 
-
-        @keyframes example {
-            from {
-                background-color: red;
-            }
-
-            to {
-                background-color: yellow;
-            }
+        to {
+          background-color: yellow;
         }
+      }
     </style>
-</head>
+  </head>
 
-<body>
-   
+  <body>
     <div></div>
-
-
-
-</body></html>
+  </body>
+</html>

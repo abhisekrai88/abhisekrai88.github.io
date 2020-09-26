@@ -1,9 +1,8 @@
 input {
-    width: 100%;
-    padding: 20px 50px;
-    margin: 100px 50px;
-    box-sizing: border-box;
-    border: 10px solid red;
-    border-radius: 5px;
-    }
-    
+  width: 100%;
+  padding: 20px 50px;
+  margin: 100px 50px;
+  box-sizing: border-box;
+  border: 10px solid red;
+  border-radius: 5px;
+}
