@@ -15,13 +15,13 @@
  * To create a process to update a counter
  */
 //global scope:
-var counter = 0;
+/*var counter = 0;
 
 /**
  * Based on the option increment / decrement a counter
  * @param {*} option
  */
-function updateCounter(option) {
+/*function updateCounter(option) {
   //local scope:
   var counter = 0;
   if (option == "increment") {
@@ -32,10 +32,14 @@ function updateCounter(option) {
 }
 var randomCounter = function () {
   counter = 100;
-};
+};*/
 
-randomCounter();
+var updateCounter = (function () {
+  var counter = 0;
+  return function () {
+    counter++;
+    return counter;
+  };
+})();
 
-function getCounterValue() {
-  return counter;
-}
+alert(updateCounter());
