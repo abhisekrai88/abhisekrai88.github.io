@@ -35,7 +35,7 @@ function mpv(brand, model, engine, seater) {
 mpv.prototype = new Car();
 mpv.prototype.constructor = mpv;
 
-var myMpv = new mpv("BMW", "2 Series Gran Tourer 216d", "Diesel", "7");
+var myMpv = new mpv("BMW", "2 Series Gran Tourer 216d", "Diesel", 7);
 console.log(myMpv);
 
 function hatchBack(brand, model, engine, doors) {
@@ -46,5 +46,5 @@ function hatchBack(brand, model, engine, doors) {
 hatchBack.prototype = new Car();
 hatchBack.prototype.constructor = hatchBack;
 
-var hatchBack = new hatchBack("Volkswagen", "Golf Mk8 GTI", "Petrol", "5");
+var hatchBack = new hatchBack("Volkswagen", "Golf Mk8 GTI", "Petrol", 5);
 console.log(hatchBack);
