@@ -10,40 +10,40 @@
  * 4. Create object of the different types of cars
  *
  */
-function Cars(brand, model, engine) {
+function Car(brand, model, engine) {
   this.brand = brand;
   this.model = model;
   this.engine = engine;
 }
 
 function suv(brand, model, engine, fourWheelDrive) {
-  Cars.call(this, brand, model, engine);
+  Car.call(this, brand, model, engine);
   this.fourWheelDrive = fourWheelDrive;
 }
 
-suv.prototype = new Cars();
+suv.prototype = new Car();
 suv.prototype.constructor = suv;
 
-var suv = new suv("Mercedes-Benz", "GLE-Class GLE400", "Petrol", "Yes");
-console.log(suv);
+var mySuv = new suv("Mercedes-Benz", "GLE-Class GLE400", "Petrol", true);
+console.log(mySuv);
 
 function mpv(brand, model, engine, seater) {
-  Cars.call(this, brand, model, engine);
+  Car.call(this, brand, model, engine);
   this.seater = seater;
 }
 
-mpv.prototype = new Cars();
+mpv.prototype = new Car();
 mpv.prototype.constructor = mpv;
 
-var mpv = new mpv("BMW", "2 Series Gran Tourer 216d", "Diesel", "7");
-console.log(mpv);
+var myMpv = new mpv("BMW", "2 Series Gran Tourer 216d", "Diesel", "7");
+console.log(myMpv);
 
 function hatchBack(brand, model, engine, doors) {
-  Cars.call(this, brand, model, engine);
+  Car.call(this, brand, model, engine);
   this.doors = doors;
 }
 
-hatchBack.prototype = new Cars();
+hatchBack.prototype = new Car();
 hatchBack.prototype.constructor = hatchBack;
 
 var hatchBack = new hatchBack("Volkswagen", "Golf Mk8 GTI", "Petrol", "5");
