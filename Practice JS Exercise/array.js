@@ -3,7 +3,7 @@
  * 2. Create a function to function to find and print all even numbers in an array
  * 3. Create a function to initialize and multiply two arrays, please research for the mechanism on how how to multiply an array
  */
-
+//1. filtering arrays
 function integers(value) {
   return value >= 0 || value <= 0;
 }
@@ -26,4 +26,13 @@ var types = [
 ];
 
 var filteredTypes = types.filter(integers);
+//2. printing arrays
 console.log(filteredTypes);
+//3. multiplying arrays
+var numbersOnly = [1, 33, 54, 2, 3, 5];
+var mulArray = new Array();
+for (i = 0; i < filteredTypes.length; i++) {
+  mulArray[i] = filteredTypes[i] * numbersOnly[i];
+}
+var mulArray = mulArray.filter(integers);
+console.log(mulArray);
