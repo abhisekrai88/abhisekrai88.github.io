@@ -26,8 +26,15 @@ var types = [
 ];
 
 var filteredTypes = types.filter(integers);
-//2. printing arrays
-console.log(filteredTypes);
+//2. printing ONLY even numbers in array
+var evenFilteredTypes = new Array();
+for (i = 0; i < filteredTypes.length; i++) {
+  if (filteredTypes[i] % 2 === 0) {
+    evenFilteredTypes.push(filteredTypes[i]);
+  }
+}
+console.log(evenFilteredTypes);
+
 //3.multiplying arrays
 var numbersOnly = [1, 33, 54, 2, 3, 5];
 var mulArray = new Array();
