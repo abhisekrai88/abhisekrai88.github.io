@@ -6,10 +6,25 @@ function add(a, b) {
 function subtract(a, b) {
     return a - b;
 }
+
+function multiply(a,b){
+    return a*b;
+}
+
+function divide(a,b){
+    return a/b;
+}
+
+/**
+ * Create 2 more functions for multiply and divide and export them to be used
+ */
+
 //step4
 export {
     add as add,
-    subtract as minus
+    subtract as minus,
+    multiply as multiply,
+    divide as divide
 };
 
 /** 
