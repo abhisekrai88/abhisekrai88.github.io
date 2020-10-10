@@ -1,0 +1,21 @@
+{
+    "students": [
+        {
+            "id":1,
+            "name": "Abi",
+            "age": 32,
+            "adress":{
+                "country": "Singapore"
+            }
+        },
+        {
+            "id":2,
+            "name": "Natasha",
+            "age": 31,
+            "adress":{
+                "country": "Singapore",
+                "city": "Singapore"
+            }
+        }
+    ]
+}
