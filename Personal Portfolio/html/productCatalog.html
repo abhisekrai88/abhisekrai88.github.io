@@ -30,20 +30,30 @@
         <li class="sublist"></li>
         <a href="../html/resume.html">Resume</a>
         <li class="active">
-          <a href="../html/productCatalog.html">Products</a>
+          <a href="../html/productCatalog.html">Products</a
+          >
         </li>
       </ul>
     </nav>
     <main class="contentbody">
       <h2 class="subhead">Product Catalog</h2>
-      <button type="button" onclick="getProducts()">Request data</button>
+      <button type="button" id="click" onclick="getProducts()">Data</button>
+        
+      </button>
       <p id="p2"></p>
       <table id="productData">
-        <tr>
-          <th>ID</th>
-          <th>Name</th>
-          <th>Catergory</th>
-          <th>Price</th>
+        <tr id="productData">
+          <th id="productData">ID</th>
+          <th id="productData">Name</th>
+          <th id="productData">Catergory</th>
+          <th id="productData">
+            Price
+            <select name="Currency" id="monies">
+              <option value="SGD">SGD</option>
+              <option value="Euros">Euros</option>
+              <option value="USD">USD</option>
+            </select>
+          </th>
         </tr>
       </table>
       <script>
