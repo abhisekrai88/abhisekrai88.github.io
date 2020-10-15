@@ -1,81 +1,20 @@
-function getProducts() {
-    var ajaxRequest = new XMLHttpRequest();
-    ajaxRequest.onreadystatechange = function () {
-      if (this.readyState == 4 && this.status == 200) {
-        let myObj = JSON.parse(this.responseText);
-        //document.getElementById("p2").innerHTML = myObj;
-        append_json(myObj);
+let xhttp = new XMLHttpRequest();
+let txt = "";
+let price = [];
+xhttp.onreadystatechange = function(){
+    if (this.readyState == 4 && this.status == 200){
+        let productsCat = JSON.parse(this.responseText);
 
-        //callback(myObj);
-      }
-    };
-
-    ajaxRequest.open(
-      "GET",
-      "http://127.0.0.1:5500/Personal%20Portfolio/html/productCatalog.json",
-      true
-    );
-    ajaxRequest.send();
-    /*fetch(
-      "http://127.0.0.1:5500/Personal%20Portfolio/html/productCatalog.json"
-    )
-      .then((response) => response.json())
-      .then((data) => console.log(data));*/
-    function append_json(data) {
-      let table = document.getElementById("productData");
-      data.forEach(function (object) {
-        let tr = document.createElement("tr");
-        tr.innerHTML =
-          "<td>" +
-          object.ID +
-          "</td>" +
-          "<td>" +
-          object.Name +
-          "</td>" +
-          "<td>" +
-          object.Catergory +
-          "</td>" +
-          "<td>" +
-          object.Price +
-          "</td>";
-        table.appendChild(tr);
-      });
+        for (let i=0; i <productsCat.length; i++){
+            txt +="<div class='products' id='" + productsCat[i].ID + "'>" + "Desc: " + productsCat[i].Name;
+            txt += "<br>" + "Catergory: " + productsCat[i].Catergory;
+            txt += "<p class='currencytext'>" + "Price: ($)" + "</p>" + "<p class = 'price'>" + productsCat[i].Price + "</p>" + "</div>";
+            //txt += "<p class = 'price'>" + productsCat[i].Price + "</p>" + "</div>";
+            price.push(productsCat[i].Price);
+        }
+        document.getElementById("container").innerHTML = txt;
     }
-  }
 
-  function getProductsEuro(callback) {
-    var ajaxRequestEuro = new XMLHttpRequest();
-    ajaxRequestEuro.onreadystatechange = function () {
-      if (this.readyState == 4 && this.status == 200) {
-        let myObjEuro = JSON.parse(this.responseText);
-        //document.getElementById("p2").innerHTML = myObj;
-        append_json(myObjEuro);
-      }
-    };
-    ajaxRequestEuro.open(
-      "GET",
-      "http://127.0.0.1:5500/Personal%20Portfolio/html/euroProductCat.json",
-      true
-    );
-    ajaxRequestEuro.send();
-    function append_json(data) {
-      let table = document.getElementById("productData");
-      data.forEach(function (object) {
-        let tr = document.createElement("tr");
-        tr.innerHTML =
-          "<td>" +
-          object.ID +
-          "</td>" +
-          "<td>" +
-          object.Name +
-          "</td>" +
-          "<td>" +
-          object.Catergory +
-          "</td>" +
-          "<td>" +
-          object.Price +
-          "</td>";
-        table.appendChild(tr);
-      });
-    }
-  }
+}
+xhttp.open("GET", "productCatalog.json", true);
+xhttp.send();

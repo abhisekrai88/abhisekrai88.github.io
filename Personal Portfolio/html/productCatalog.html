@@ -19,7 +19,7 @@
     />
   </head>
   <title>Abhisek Rai: Products</title>
-  <body>
+  <body id="body">
     <nav class="navigation">
       <a href="../html/personalPortfolio.html">ABHISEK RAI</a>
       <ul class="list">
@@ -36,23 +36,9 @@
     </nav>
     <main class="contentbody">
       <h2 class="subhead">Product Catalog</h2>
-      <button type="button" id="click" onclick="getProducts()">Data</button>
-      <p id="p2"></p>
-      <table id="productData">
-        <tr>
-          <th>ID</th>
-          <th>Name</th>
-          <th>Catergory</th>
-          <th>
-            Price
-            <select name="Currency" id="monies" onchange="getProductsEuro()">
-              <option value="SGD">SGD</option>
-              <option value="Euro">Euro</option>
-              <option value="USD">USD</option>
-            </select>
-          </th>
-        </tr>
-      </table>
+      <button type="button" id="click" onclick="productsCat()">Data</button>
+
+      <div id="container"></div>
     </main>
   </body>
 </html>
