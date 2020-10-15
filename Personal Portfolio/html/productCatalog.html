@@ -30,27 +30,24 @@
         <li class="sublist"></li>
         <a href="../html/resume.html">Resume</a>
         <li class="active">
-          <a href="../html/productCatalog.html">Products</a
-          >
+          <a href="../html/productCatalog.html">Products</a>
         </li>
       </ul>
     </nav>
     <main class="contentbody">
       <h2 class="subhead">Product Catalog</h2>
       <button type="button" id="click" onclick="getProducts()">Data</button>
-        
-      </button>
       <p id="p2"></p>
       <table id="productData">
-        <tr id="productData">
-          <th id="productData">ID</th>
-          <th id="productData">Name</th>
-          <th id="productData">Catergory</th>
-          <th id="productData">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Catergory</th>
+          <th>
             Price
-            <select name="Currency" id="monies">
+            <select name="Currency" id="monies" onchange="getProductsEuro()">
               <option value="SGD">SGD</option>
-              <option value="Euros">Euros</option>
+              <option value="Euro">Euro</option>
               <option value="USD">USD</option>
             </select>
           </th>
@@ -75,6 +72,52 @@
             true
           );
           ajaxRequest.send();
+          /*fetch(
+            "http://127.0.0.1:5500/Personal%20Portfolio/html/productCatalog.json"
+          )
+            .then((response) => response.json())
+            .then((data) => console.log(data));*/
+          function append_json(data) {
+            let table = document.getElementById("productData");
+            data.forEach(function (object) {
+              let tr = document.createElement("tr");
+              tr.innerHTML =
+                "<td>" +
+                object.ID +
+                "</td>" +
+                "<td>" +
+                object.Name +
+                "</td>" +
+                "<td>" +
+                object.Catergory +
+                "</td>" +
+                "<td>" +
+                object.Price +
+                "</td>";
+              table.appendChild(tr);
+            });
+          }
+        }
+      </script>
+      <script>
+        function getProductsEuro(callback) {
+          var ajaxRequestEuro = new XMLHttpRequest();
+          ajaxRequestEuro.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+              let myObjEuro = JSON.parse(this.responseText);
+              //document.getElementById("p2").innerHTML = myObj;
+              append_json(myObjEuro);
+
+              //callback(myObj);
+            }
+          };
+
+          ajaxRequestEuro.open(
+            "GET",
+            "http://127.0.0.1:5500/Personal%20Portfolio/html/euroProductCat.json",
+            true
+          );
+          ajaxRequestEuro.send();
           /*fetch(
             "http://127.0.0.1:5500/Personal%20Portfolio/html/productCatalog.json"
           )
