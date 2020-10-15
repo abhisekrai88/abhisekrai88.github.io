@@ -38,14 +38,24 @@
       <h2 class="subhead">Product Catalog</h2>
       <button type="button" onclick="getProducts()">Request data</button>
       <p id="p2"></p>
-
+      <table id="productData">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Catergory</th>
+          <th>Price</th>
+        </tr>
+      </table>
       <script>
-        function getProducts() {
+        function getProducts(callback) {
           var ajaxRequest = new XMLHttpRequest();
           ajaxRequest.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
-              let myObj = this.responseText;
-              document.getElementById("p2").innerHTML = myObj;
+              let myObj = JSON.parse(this.responseText);
+              //document.getElementById("p2").innerHTML = myObj;
+              append_json(myObj);
+
+              //callback(myObj);
             }
           };
 
@@ -60,6 +70,26 @@
           )
             .then((response) => response.json())
             .then((data) => console.log(data));*/
+          function append_json(data) {
+            let table = document.getElementById("productData");
+            data.forEach(function (object) {
+              let tr = document.createElement("tr");
+              tr.innerHTML =
+                "<td>" +
+                object.ID +
+                "</td>" +
+                "<td>" +
+                object.Name +
+                "</td>" +
+                "<td>" +
+                object.Catergory +
+                "</td>" +
+                "<td>" +
+                object.Price +
+                "</td>";
+              table.appendChild(tr);
+            });
+          }
         }
       </script>
     </main>

@@ -3,4 +3,4 @@ let myObj = [
     {"ID":2,"Name":"Unrvlld Leather Varsity Bomber Jacket (Red)","Catergory":"Clothing","Price":240.99},
     {"ID":3,"Name":"Pizza Planet T-Shirt (Black)","Catergory":"Clothing","Price":27.99}
 ]
-console.log(myObj)
+console.log(myObj[0])
