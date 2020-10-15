@@ -80,22 +80,13 @@ body li:hover > a {
   font-family: "Poppins", sans-serif;
   color: #fff;
 }
-.resume {
-  background-color: black;
-  opacity: 80%;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 4;
-  max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
-
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-right: 32px;
-  padding-left: 32px;
+#p2 {
+  font-weight: 700;
+  font-size: 26px;
+  color: gray;
+  font-family: "Open Sans", sans-serif;
 }
+
 .picres {
   height: 100%;
   width: 100%;

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="../js/productCatalog.js"></script>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <link rel="stylesheet" href="../css/productCatalog.css" />
     <link
@@ -35,6 +36,32 @@
     </nav>
     <main class="contentbody">
       <h2 class="subhead">Product Catalog</h2>
+      <button type="button" onclick="getProducts()">Request data</button>
+      <p id="p2"></p>
+
+      <script>
+        function getProducts() {
+          var ajaxRequest = new XMLHttpRequest();
+          ajaxRequest.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+              let myObj = this.responseText;
+              document.getElementById("p2").innerHTML = myObj;
+            }
+          };
+
+          ajaxRequest.open(
+            "GET",
+            "http://127.0.0.1:5500/Personal%20Portfolio/html/productCatalog.json",
+            true
+          );
+          ajaxRequest.send();
+          /*fetch(
+            "http://127.0.0.1:5500/Personal%20Portfolio/html/productCatalog.json"
+          )
+            .then((response) => response.json())
+            .then((data) => console.log(data));*/
+        }
+      </script>
     </main>
   </body>
 </html>
