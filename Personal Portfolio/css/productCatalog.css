@@ -80,13 +80,44 @@ body li:hover > a {
   font-family: "Poppins", sans-serif;
   color: #fff;
 }
+.contentbody {
+  background-color: black;
+  opacity: 80%;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-right: 32px;
+  padding-left: 32px;
+}
 #p2 {
   font-weight: 700;
   font-size: 26px;
   color: gray;
   font-family: "Open Sans", sans-serif;
 }
+#container {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 36px;
 
+  margin: 0 0 20px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  opacity: 80%;
+}
+
+.products {
+}
 .picres {
   height: 100%;
   width: 100%;
