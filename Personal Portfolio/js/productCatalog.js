@@ -7,7 +7,7 @@ xhttp.onreadystatechange = function(){
         let productsCat = JSON.parse(this.responseText);
 
         for (let i=0; i <productsCat.length; i++){
-            txt += '<a href ="' + productsCat[i].url +'">';
+            txt += '<a href ="' + productsCat[i].url +'" target="_blank">';
             txt +="<div class='products' id='" + productsCat[i].ID + "'>" + "Desc: " + productsCat[i].Name;
             txt += "<br>" + "Catergory: " + productsCat[i].Catergory;
             txt += "<p class='currencytext'>" + "Price: ($)" + "</p>" + "<p class = 'price'>" + productsCat[i].Price + "</p>" + "</div>";
