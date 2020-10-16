@@ -1,6 +1,6 @@
 function currency(){
     let selector = document.getElementById("currency-selector").value;
-    let list = document.getElementById("price");
+    let list = document.getElementsByClassName("price");
     let currencytext = document.getElementsByClassName("currencytext");
 
     if (selector == "SGD") {
@@ -14,8 +14,16 @@ function currency(){
         let usd;
         for (let i = 0; i < list.length; i++){
             currencytext[i].innerHTML = "Price : USD";
-            let usd = price[i] * 1.25;
-            list[i].innerHTML = usd;
+            let usd = price[i] * 0.74;
+            list[i].innerHTML = usd.toFixed(2);
+}
+    }
+    if (selector == "EURO") {
+        let euro;
+        for (let i = 0; i < list.length; i++){
+            currencytext[i].innerHTML = "Price : EURO";
+            let euro = price[i] * 0.63;
+            list[i].innerHTML = euro.toFixed(2);
 }
     }
 }

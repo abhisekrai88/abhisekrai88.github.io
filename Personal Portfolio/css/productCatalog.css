@@ -115,9 +115,23 @@ body li:hover > a {
   background-color: black;
   opacity: 80%;
 }
-
-.products {
+.currency {
+  font-size: 10px;
+  font-weight: 500;
+  padding: 0px;
+  line-height: 1px;
+  margin: 0 0 20px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
 }
+#currency-selector {
+  background-color: gray;
+  font-size: 10px;
+  font-weight: bolder;
+}
+
 .picres {
   height: 100%;
   width: 100%;

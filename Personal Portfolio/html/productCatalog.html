@@ -39,11 +39,12 @@
       <h2 class="subhead">Product Catalog</h2>
 
       <div>
-        <label>Select Currency:</label>
+        <label class="currency">Select Currency:</label>
 
-        <select id="currency-selector">
+        <select id="currency-selector" onchange="currency()">
           <option value="SGD">SGD</option>
           <option value="USD">USD</option>
+          <option value="EURO">EURO</option>
         </select>
       </div>
       <div id="container"></div>
