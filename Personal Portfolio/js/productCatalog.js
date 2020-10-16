@@ -16,7 +16,7 @@ xhttp.onreadystatechange = function(){
             
         }
         document.getElementById("container").innerHTML = txt;
-        let img = document.createElement('img');
+        
         
     }
 
