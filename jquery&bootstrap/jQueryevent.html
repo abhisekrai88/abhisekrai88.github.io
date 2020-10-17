@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        let originalValue = $("#test").text();
+        $("#test").on({
+          mouseenter: function () {
+            $(this).css("background-color", "lightgray");
+            $(this).text("Some new text.");
+          },
+          mouseleave: function () {
+            $(this).css("background-color", "lightblue");
+            $(this).text(originalValue);
+          },
+          click: function () {
+            $(this).css("background-color", "yellow");
+          },
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <p id="test">Click or move the mouse pointer over this paragraph.</p>
+    <p>Click or move the mouse pointer over this paragraph.</p>
+  </body>
+</html>
