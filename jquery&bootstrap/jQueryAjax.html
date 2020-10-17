@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          /**
+           * 1. we had to create an XHR object
+           * 2. Then we had to decide on the method that we will use, either get or post
+           * 3. You had check if the response was successful or not
+           * 4. Make / send the http request
+           * */
+          $.get(
+            "http://127.0.0.1:5500/jquery&bootstrap/jQueryAjax.html",
+            function (data, status) {
+              console.log("Data: " + data + "\nStatus: " + status);
+            }
+          );
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button>Send</button>
+  </body>
+</html>
