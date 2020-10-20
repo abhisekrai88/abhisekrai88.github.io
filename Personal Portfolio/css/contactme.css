@@ -10,6 +10,18 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.1fr 0.3fr 1fr 0.1fr;
 }
+.container {
+  color: darkgray;
+  display: flex;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-right: 32px;
+  padding-left: 32px;
+}
 a:link {
   color: darkgray;
   font-family: "Poppins", sans-serif;
@@ -69,7 +81,7 @@ body li:hover > a {
   opacity: 80%;
   grid-column-start: 1;
   grid-column-end: 4;
-  grid-row-start: 2;
+  grid-row-start: 1;
   grid-row-end: 4;
   max-width: 1140px;
   margin-left: auto;
@@ -99,50 +111,7 @@ body li:hover > a {
   font-family: "Poppins", sans-serif;
   color: #fff;
 }
-.basicinfo {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-  color: gray;
-}
-.faceshot {
-  height: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 250px;
-}
-.info {
-  font-weight: 700;
-  font-size: 26px;
-  color: gray;
-  font-family: "Open Sans", sans-serif;
-}
-.tag {
-  margin-bottom: 8px;
-  margin-top: 0px;
-  font-stretch: expanded;
-}
-.listleft {
-  margin-right: -15px;
-  margin-left: -15px;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.5;
-}
-.listright {
-  margin-right: -15px;
-  margin-left: -15px;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.5;
-}
-.listleft > li {
-  padding-bottom: 10px;
-}
-.listright > li {
-  padding-bottom: 10px;
-}
+
 .p2 {
   text-overflow: inherit;
   font-size: 15px;
