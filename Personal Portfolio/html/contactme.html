@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <link rel="stylesheet" href="../css/contactme.css" />
     <link
@@ -41,7 +41,21 @@
         <main class="contentbody">
             <h2 class="subhead">Contact</h2>
             <p class="p1">Contact Me</p>
-            
+            <div class="container">
+                <form action="#" method="post">
+                    <label for="firstname"></label>
+                    <textarea placeholder="Your Name" name="firstname" id="firstname" cols="20" rows="1"></textarea>
+                    <label for="email"></label>
+                    <textarea placeholder="Your Email" name="email" id="email" cols="20" rows="1"></textarea>
+                    <label for="subject"></label>
+                    <textarea placeholder="Subject" name="subject" id="subject" cols="20" rows="1"></textarea>
+                    <label for="message"></label>
+                    <textarea placeholder="Message" name="message" id="message" cols="20" rows="1"></textarea>
+                    <div class="character-counter-wrapper"><span class="character-counter counter">0</span> characters typed</div>
+                    <div class="characters-remaining-wrapper"><span class="characters-remaining counter">50</span> characters left</div>
+                </form>
+                <input type="submit" value="Submit" />
+            </div>
             </main>
         </body>
     </html>
