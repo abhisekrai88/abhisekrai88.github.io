@@ -3,7 +3,7 @@ $(document).ready(function(){
     if($('.character-counter').length > 0){
       var maximumCharacters = 50;
       
-      $('firstname').keyup(function(){
+      $('textarea').keyup(function(){
         var $this = $(this);
         var $parentElement = $this.parent();
         var $characterCounter = $parentElement.find('.character-counter');
