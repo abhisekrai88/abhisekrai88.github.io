@@ -3,7 +3,7 @@
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="../js/contactme.js"></script>
-      <script src=""></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     
     
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -46,7 +46,7 @@
             <h2 class="subhead">Contact</h2>
             <p class="p1">Contact Me</p>
             <div class="container">
-                <form action="#" method="post">
+                <form id="contactDetails "action="#" method="post">
                     <label for="firstname"></label>
                     <textarea placeholder="Your Name" name="firstname" id="firstname" cols="20" rows="1"></textarea>
                     <label for="email"></label>
@@ -55,22 +55,13 @@
                     <textarea placeholder="Subject" name="subject" id="subject" cols="20" rows="1"></textarea>
                     <label for="message"></label>
                     <textarea placeholder="Message" name="message" id="message" cols="20" rows="1"></textarea>
-                    <div class="character-counter-wrapper"><span class="character-counter counter">0</span> characters typed</div>
-                    <div class="characters-remaining-wrapper"><span class="characters-remaining counter">50</span> characters left</div>
+                    <div class="character-counter-wrapper"><p class="character-counter counter">0</p> characters typed</div>
+                    <div class="characters-remaining-wrapper"><p class="characters-remaining counter">50</p> characters left</div>
                 </form>
                 <input type="submit" value="Submit" />
             </div>
-            <form action="#" method="post">
-                <div>
-                    <label for="textarea">Textarea:</label>
-                    <textarea cols="40" rows="4" name="textarea" id="textarea"></textarea>
-                <div class="character-counter-wrapper"><span class="character-counter counter">0</span> characters typed</div>
-                <div class="characters-remaining-wrapper"><span class="characters-remaining counter">50</span> characters left</div>
-                </div>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
             
-                <div>
-                    <input type="submit" value="Submit" />
-                </div>
             </form>
             </main>
         </body>
