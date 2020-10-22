@@ -9,6 +9,8 @@
  * 1. Two numbers
  * 2. Two number arrays
  * 3. Two functions that return numbers
+ * 4. Two nested arrays of numbers
+
  * @param {} x 
  * @param {*} y 
  */
