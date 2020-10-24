@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
       <script src="../js/contactme.js"></script>
       <link rel="stylesheet" href="../css/contactme.css" />
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
    
     <link
@@ -42,10 +44,10 @@
       </ul>
     </nav>
     
-        <main class="contentbody">
+        <main class="d-flex flex-column mb-3">
             <h2 class="subhead">Contact</h2>
             <p class="p1">Contact Me</p>
-            <div class="container">
+            <div class="flex-container">
                 <form id="contactDetails "action="#" method="post">
                     <label for="firstname"></label>
                     <input type="text" placeholder="Your Name" name="firstname" id="firstname" ></input>
@@ -59,12 +61,13 @@
                     <label for="message"></label>
                     <textarea placeholder="Message" name="message" id="message" cols="24" rows="5"></textarea>
                     <div class="character-counter-wrapper"><span class="character-counter counter"><strong>0</strong></span> <strong>characters typed</strong></div>
-                    <div class="characters-remaining-wrapper"><span class="characters-remaining counter"><strong>50</strong></span> <strong>characters left</strong></div>
+                    <div class="characters-remaining-wrapper"><span class="characters-remaining counter"><strong>50</strong></span> <strong></strong>characters left</div>
+                    <button type="submit">Submit</button>
                     </div>
                 </form>
             </div>
             </form>
-            <button type="submit">Submit</button>
+            
             </main>
             
             

@@ -76,14 +76,16 @@ body li:hover > a {
   font-size: 16px;
 }
 
-.contentbody {
+.d-flex {
   background-color: black;
   opacity: 80%;
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 4;
-
+  display: flex;
+  width: 50%;
+  min-height: 300px;
   margin-left: auto;
   margin-right: auto;
 
@@ -93,7 +95,7 @@ body li:hover > a {
   padding-left: 32px;
 }
 
-.subhead {
+.d-flex h2 {
   font-size: 14px;
   font-weight: 500;
   padding: 36px;
@@ -104,7 +106,7 @@ body li:hover > a {
   color: #aaaaaa;
   font-family: "Poppins", sans-serif;
 }
-.p1 {
+.d-flex p {
   margin: -15px 0 15px 0;
   font-size: 36px;
   font-weight: 700;
@@ -121,18 +123,26 @@ body li:hover > a {
   font-family: "Open Sans", sans-serif;
 }
 
-#contactDetails {
-  display: flexbox;
-}
-input {
-  margin: 0px;
-  padding: 20px 15px;
+/*.flex-container {
   display: flex;
-  width: 50%;
+  margin: 0 auto;
+  
+}*/
+.d-flex input {
+  padding: 20px 15px;
+  flex: 1;
+  margin: 10px;
+  width: 80%;
+}
+.d-flex form {
+  padding: 20px 15px;
+  flex: 1;
 }
 textarea {
+  padding: 20px 15px;
+  flex: 1;
+  margin: 10px;
   width: 100%;
-  display: flex;
 }
 .character-counter-wrapper,
 .characters-remaining-wrapper {
