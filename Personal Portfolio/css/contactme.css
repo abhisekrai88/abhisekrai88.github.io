@@ -144,6 +144,9 @@ textarea {
   margin: 10px;
   width: 100%;
 }
+button {
+  margin: 10px;
+}
 .character-counter-wrapper,
 .characters-remaining-wrapper {
   color: white;
