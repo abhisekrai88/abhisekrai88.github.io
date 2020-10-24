@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  <body>
+    <div id="mydiv"></div>
+
+    <script type="text/babel">
+      class Hello extends React.Component {
+        render() {
+          return <h1>Hello World!</h1>;
+        }
+      }
+
+      class Car extends React.Component {
+        render() {
+          return <div>This is a car component</div>;
+        }
+      }
+
+      function Student() {
+        return (
+          <div>
+            <h1>My name is Abi</h1>
+          </div>
+        );
+      }
+      class Sum extends React.Component {
+        render() {
+          return <div>{2 + 2}</div>;
+        }
+      }
+
+      class AddNumbers extends React.Component {
+        render() {
+          //parse the props as integer and add the numbers
+          return (
+            <div>
+              Adding two numbers{" "}
+              {parseInt(this.props.number1) + parseInt(this.props.number2)}
+            </div>
+          );
+        }
+      }
+
+      const addition = <AddNumbers number1="1" number2="2" />;
+      ReactDOM.render(addition, document.getElementById("mydiv"));
+
+      //ReactDOM.render(<AddNumbers />, document.getElementById("mydiv"));
+    </script>
+  </body>
+</html>
