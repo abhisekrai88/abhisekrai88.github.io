@@ -36,7 +36,9 @@ function App (){
     setSearchTerm(e.target.value); 
   }
   return(<>
+  <h1>Movie Database</h1>
     <header>
+      
     <form onSubmit={handleOnSubmit}>
     <input className="search" 
       type="search" 
