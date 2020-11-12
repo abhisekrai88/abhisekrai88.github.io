@@ -9,7 +9,7 @@ class App extends React.Component {
     return (
       <div className="App">
 	<header id="home">
-		<div className="bg-img" style={{backgroundImage: "url('https://image.freepik.com/free-photo/minimalist-black-background-arrangement-coffee-beans_23-2148441212.jpg')"}}>
+		<div className="bg-img" style={{backgroundImage: "url('coffee_beans\src\coffee.jpg')"}}>
 			<div className="overlay"></div>
 		</div>
 		<nav id="nav" className="navbar nav-transparent">
