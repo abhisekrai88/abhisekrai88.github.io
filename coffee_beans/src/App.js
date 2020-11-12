@@ -9,7 +9,7 @@ class App extends React.Component {
     return (
       <div className="App">
 	<header id="home">
-		<div className="bg-img" style={{backgroundImage: "url('coffee_beans\src\coffee.jpg')"}}>
+		<div className="bg-img" style={{backgroundImage: "url('')"}}>
 			<div className="overlay"></div>
 		</div>
 		<nav id="nav" className="navbar nav-transparent">
@@ -17,8 +17,8 @@ class App extends React.Component {
 				<div className="navbar-header">
 					<div className="navbar-brand">
 						<a href="index.html">
-							<img className="logo" src="img/logo.png" alt="logo" />
-							<img className="logo-alt" src="img/logo-alt.png" alt="logo" />
+							<img className="logo" src="https://acegif.com/wp-content/uploads/coffee.gif" alt="logo" />
+						
 						</a>
 					</div>
 
@@ -50,8 +50,8 @@ class App extends React.Component {
 
 					<div className="col-md-10 col-md-offset-1">
 						<div className="home-content">
-							<h1 className="white-text">We Are Creative Agency</h1>
-							<p className="white-text">Morbi mattis felis at nunc. Duis viverra diam non justo. In nisl. Nullam sit amet magna in magna gravida vehicula. Mauris tincidunt sem sed arcu. Nunc posuere.
+							<h1 className="white-text">Sorbo del Paraíso</h1>
+							<p className="white-text">You do not have to be in paradise to taste paradise.
 							</p>
 							<button className="white-btn">Get Started!</button>
 							<button className="main-btn">Learn more</button>
@@ -64,7 +64,7 @@ class App extends React.Component {
 
 	</header>
 
-	<div id="about" className="section md-padding">
+	<div id="about" className="section md-padding" >
 
 		<div className="container">
 

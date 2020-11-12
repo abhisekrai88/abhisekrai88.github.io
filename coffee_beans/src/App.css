@@ -1,5 +1,13 @@
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css");
 
+body {
+  background-image: url(https://i.pinimg.com/originals/09/d8/01/09d801f666bfacd3cbb8be437396db18.gif),
+    url(../src/radial-gradient.png);
+
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
 .App {
   text-align: center;
 }
@@ -19,6 +27,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  animation: ease-in-out;
 }
 
 .App-link {
