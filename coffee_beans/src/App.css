@@ -1,5 +1,14 @@
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css");
 
+body {
+  display: flex;
+}
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .App {
   text-align: center;
 }
