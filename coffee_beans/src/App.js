@@ -2,8 +2,6 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-const backImage = "https://image.freepik.com/free-photo/minimalist-black-background-arrangement-coffee-beans_23-2148441212.jpg"
-
 class App extends React.Component {
   render (){
     return (
@@ -17,12 +15,14 @@ class App extends React.Component {
 				<div className="navbar-header">
 					<div className="navbar-brand">
 						<a href="index.html">
-							<img className="logo" src="https://acegif.com/wp-content/uploads/coffee.gif" alt="logo" />
+							<img className="logo" src="" alt="logo" />
 						
 						</a>
 					</div>
 
 					<div className="nav-collapse">
+
+            
 						<span></span>
 					</div>
 				</div>
@@ -53,8 +53,7 @@ class App extends React.Component {
 							<h1 className="white-text">Sorbo del Paraíso</h1>
 							<p className="white-text">You do not have to be in paradise to taste paradise.
 							</p>
-							<button className="white-btn">Get Started!</button>
-							<button className="main-btn">Learn more</button>
+							
 						</div>
 					</div>
 
@@ -71,32 +70,38 @@ class App extends React.Component {
 			<div className="row">
 
 				<div className="section-header text-center">
-					<h2 className="title">Welcome to Website</h2>
+					<h2 className="title">About Us</h2>
 				</div>
 				<div className="col-md-4">
 					<div className="about">
 						<i className="fa fa-cogs"></i>
-						<h3>Fully Customizible</h3>
-						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
-						<a href="#">Read more</a>
+						<h3>Our Commitmment </h3>
+						<p>We want every coffee served to be able to replicate how your envision your coffee to taste. We are willing to listen to your requests
+              and make a cup of coffee that you want to drink. The coffee beans we use are from the mountains of Columbia and freshly roasted and delivered
+              to us daily for the drinking pleasure of all our customers
+            </p>
+						
 					</div>
 				</div>
 
 				<div className="col-md-4">
 					<div className="about">
 						<i className="fa fa-magic"></i>
-						<h3>Awesome Features</h3>
-						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
-						<a href="#">Read more</a>
+						<h3>Our History</h3>
+						<p>We have been servicing coffee since the 60s and this business has been running in the family for decades. The first cup of coffee served here is 
+              still on our menu which still attracts customers who my grandfather used to serve. 
+            </p>
+						
 					</div>
 				</div>
 
 				<div className="col-md-4">
 					<div className="about">
 						<i className="fa fa-mobile"></i>
-						<h3>Fully Responsive</h3>
-						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
-						<a href="#">Read more</a>
+						<h3>Our Coffee Beans</h3>
+						<p>We use arabica beans which is lighter and sweeter. Our beans comes all the way from Columbia which gives 
+              its beans the light and flowery taste that many coffee lovers crave.</p>
+						
 					</div>
 				</div>
 
@@ -114,7 +119,7 @@ class App extends React.Component {
 			<div className="row">
 
 				<div className="section-header text-center">
-					<h2 className="title">Featured Works</h2>
+					<h2 className="title">Our Menu</h2>
 				</div>
 
 				<div className="col-md-4 col-xs-6 work">
@@ -451,6 +456,7 @@ class App extends React.Component {
       </div>
     );
   }
+  
 }
 
 export default App;
