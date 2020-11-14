@@ -1,37 +1,15 @@
-import React,{useState,useEffect} from 'react';
-import coffee from './components/coffee';
-import './App.css';
+import React from 'react';
+import Hey from './components/Coffee'
 
-function App() {
-  const [data,setData]=useState([]);
-  const getData=()=>{
-    fetch('data.json'
-    ,{
-      headers : { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-       }
-    }
-    )
-      .then(function(response){
-        console.log(response)
-        return response.json();
-      })
-      .then(function(myJson) {
-        console.log(myJson);
-        setData(myJson)
-      });
-  }
-  useEffect(()=>{
-    getData()
-  },[])
-  return (
-    <div className="App">
-     {
-       data && data.length>0 && data.map((item)=><p>{item.about}</p>)
-     }
+
+
+function App(){
+  return(
+    <div className="hello"><h1>components</h1>
+    
     </div>
-  );
+    
+  )
 }
 
 export default App;
