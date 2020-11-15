@@ -121,9 +121,12 @@ li .link:hover {
   position: relative;
   display: flex;
   flex-direction: column;
-  left: 15em;
+
   top: 8em;
   align-items: flex-start;
+}
+.heading {
+  left: 15em;
 }
 .work .heading {
   font-family: "Montserrat", sans-serif;
@@ -132,6 +135,12 @@ li .link:hover {
 }
 .work .work-content {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  left: 0;
+}
+.work-content {
+  left: 0 !important;
 }
 .work-over {
   position: absolute;
@@ -157,6 +166,7 @@ li .link:hover {
   box-shadow: oldlace;
   overflow: hidden;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .project img {

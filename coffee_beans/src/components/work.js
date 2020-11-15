@@ -16,6 +16,7 @@ class Work extends Component {
                              service = {coffee.description}
                              price = {coffee.price}
                              imageSrc = {coffee.imageSrc}
+                             url = {coffee.url}
                              
                      ></Project>
                 ))}
