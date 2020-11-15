@@ -6,7 +6,7 @@ export default
         headerTagline: [//Line 1 For Header
                         'Welcome to Sorbo del Paraíso',
                         //Line 2 For Header
-                        'You do not have to be in paradise to taste paradise'
+                        'You dont have to be in paradise to taste paradise'
                         //Line 3 For Header
                         
     ],

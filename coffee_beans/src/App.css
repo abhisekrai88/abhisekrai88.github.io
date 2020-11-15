@@ -117,13 +117,14 @@ li .link:hover {
 }
 .about-content p {
   font-size: 1.3em;
+  font-weight: bolder;
   text-align: left;
   width: 37em;
 }
 .about img {
   margin-left: 5em;
   width: 50%;
-  opacity: 90%;
+  opacity: 50%;
   background-blend-mode: lighten;
 }
 .work {
@@ -226,6 +227,9 @@ li .link:hover {
 /* SMARTPHONES PORTRAIT */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   body {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
     font-size: 6px;
   }
   header h1 {
@@ -249,7 +253,6 @@ li .link:hover {
   .about {
     position: relative;
     display: flex;
-    top: -30em;
   }
   .about img {
     display: none;
@@ -304,6 +307,8 @@ li .link:hover {
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   body {
+    display: flex;
+    flex-wrap: wrap;
     font-size: 10px;
   }
   header h1 {
@@ -324,11 +329,8 @@ li .link:hover {
   .about {
     position: relative;
     display: flex;
-    top: -10em;
   }
-  .about img {
-    display: none;
-  }
+
   .about-content {
     left: 6em;
   }
