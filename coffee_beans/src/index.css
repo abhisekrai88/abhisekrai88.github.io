@@ -13,3 +13,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+div {
+  color: gray;
+}
+
+a:link {
+  color: darkgray;
+  font-family: "Poppins", sans-serif;
+  text-decoration: unset;
+
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+a:visited {
+  color: darkgray;
+}
+
+body a:hover,
+body .active > a,
+body li:hover > a {
+  color: rgb(255, 255, 255);
+  text-decoration: ivory;
+}
