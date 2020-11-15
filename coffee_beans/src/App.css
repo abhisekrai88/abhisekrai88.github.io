@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans&display=swap");
 
 body {
-  display: flex;
-  flex-wrap: wrap;
   font-size: 16px;
   background: white;
   font-family: "Open Sans", sans-serif;
@@ -24,14 +22,13 @@ body {
   top: 4em;
 }
 .heading-background {
+  position: fixed;
   opacity: 0.05;
-  font-size: 11em;
+  font-size: 25em;
   left: -0.2em;
   top: -0.5em;
   z-index: -100;
   color: #9352ae;
-  text-align: center;
-  position: fixed;
 }
 header {
   display: flex;
@@ -50,7 +47,6 @@ nav {
   left: 60em;
   top: 6em;
   z-index: 100;
-  background-color: rgb(105, 89, 89);
 }
 nav li {
   display: inline-block;
@@ -120,8 +116,6 @@ li .link:hover {
 }
 .about img {
   margin-left: 5em;
-  width: 100%;
-  height: 100%;
 }
 .work {
   position: relative;
@@ -138,15 +132,6 @@ li .link:hover {
 }
 .work .work-content {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem;
-}
-.root {
-  display: flex;
-  flex-direction: column;
 }
 .work-over {
   position: absolute;
@@ -162,14 +147,21 @@ li .link:hover {
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
 }
-.work:hover .work-over {
+.project:hover .work-over {
   transform: translateY(0%);
+}
+.project {
+  width: 300px;
+  margin: 1rem;
+  border-radius: 3px;
+  box-shadow: oldlace;
+  overflow: hidden;
+  position: relative;
 }
 
 .project img {
-  width: 12em;
-  height: 12em;
-  padding: 10%;
+  width: 15em;
+  height: 15em;
 }
 .contact {
   position: relative;
@@ -417,30 +409,8 @@ li .link:hover {
     align-items: flex-start;
   }
   .work .work-content {
-    display: flex;
-    flex-wrap: wrap;
-
-    background-color: rgb(138, 138, 165);
-    width: 300px;
-    margin: 1rem;
-    border-radius: 3px;
-    box-shadow: oldlace;
-    overflow: hidden;
-    position: relative;
-  }
-  .work-over {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: whitesmoke;
-    color: black;
-    transform: translateY(100%);
-    transition: transform 0.3s ease-in-out;
-    overflow: auto;
-    max-height: 100%;
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .project img {
     width: 32em;
