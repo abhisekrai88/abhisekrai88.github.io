@@ -6,7 +6,7 @@ class Navbar extends Component {
         scroll.scrollToTop();
     };
     render() { 
-        return (<nav>
+        return (<nav >
             <ul>
                 <li><Link
                     className='link'

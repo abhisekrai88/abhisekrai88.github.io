@@ -12,8 +12,8 @@ class Contact extends Component {
         <Fade bottom>
         <div className='contact-content'>
                 <h1>
-                Let’s create your next<br></br>
-                <span className='amazing-color'>experience together</span></h1>
+                Book a date with us<br></br>
+                <span className='amazing-color'>to experience paradise</span></h1>
                     <a href={`mailto:${data.contactEmail}`} className='email'>{data.contactEmail}</a>
                 <ul>
                     {data.social.map((link,index)=>(
@@ -23,7 +23,7 @@ class Contact extends Component {
         </div>
         </Fade>
 
-            <span className='footer'>Made With ❤ by <a href="http://chetanverma.com/">Chetan Verma</a></span>
+            <span className='footer'>Love <a href="https://www.linkedin.com/in/abhisek-rai-42860a92">Abhisek Rai</a></span>
         </div>);
     }
 }
