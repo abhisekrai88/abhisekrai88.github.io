@@ -2,7 +2,7 @@ export default
     {
         //(Please Do Not Remove The comma(,) after every variable)
         //Change The Website Template
-        name :'Abhisek Rai',
+        name :'',
         headerTagline: [//Line 1 For Header
                         'Welcome to Sorbo del Paraíso',
                         //Line 2 For Header
@@ -14,7 +14,7 @@ export default
         contactEmail:'kesihba.iar@gmail.com',
         // Add Your About Text Here
         abouttext: "We bring you freshly roasted arabica beans straight from the mountains of Columbia which has a smooth, sweet taste, with flavour notes of chocolate and sugar",
-        aboutImage:'https://www.101caffe.sg/wp-content/uploads/2019/05/aroma-aromatic-art-434213.jpg',
+        aboutImage:'https://giffiles.alphacoders.com/269/2696.gif',
        //Change This To Hide The Image of About Section (True Or False)
        ShowAboutImage:true,//true or false (Change Here)
        // Change Projects Here 
