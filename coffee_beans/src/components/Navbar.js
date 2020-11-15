@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Link, animateScroll as scroll } from "react";
-
+import { Link, animateScroll as scroll } from "react-scroll";
 class Navbar extends Component {
     state = {  }
     scrollToTop = () => {
@@ -12,7 +11,7 @@ class Navbar extends Component {
                 <li><Link
                     className='link'
                     activeClass="active"
-                    to="home"
+                    to="homw"
                     spy={true}
                     smooth={true}
                     offset={-70}
