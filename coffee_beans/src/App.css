@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i");
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css");
 
 body {
   font-size: 16px;
@@ -55,6 +56,7 @@ nav {
   top: 0;
   z-index: 100;
 }
+
 .navhead {
   font-family: "Snell Roundhand", cursive;
 }
@@ -84,7 +86,11 @@ li .link:hover {
 .header-title button {
   background: black;
   border: 0px;
-  padding: 1em 3em;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
   transition: all 0.2s ease-out;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -102,9 +108,10 @@ li .link:hover {
 .header-title {
   position: relative;
   font-family: "Montserrat", sans-serif;
-  font-size: 3em;
+  font-size: 2.5em;
   text-align: left;
-  top: 2em;
+  top: -12.5em;
+  left: 1em;
 }
 .about {
   display: flex;
@@ -238,6 +245,7 @@ li .link:hover {
     font-size: 6px;
   }
   header h1 {
+    display: flex;
     font-size: 5em;
     padding: 1em;
     margin-right: 0em;
@@ -247,17 +255,21 @@ li .link:hover {
     display: none;
   }
   nav {
-    display: none;
+    justify-content: center;
+    text-align: center;
   }
   .header-title {
+    display: flex;
+    flex-wrap: wrap;
     font-size: 3em;
     text-align: left;
-    top: 1em;
+    top: 5em;
     left: 1em;
   }
   .about {
     position: relative;
     display: flex;
+    top: auto;
   }
   .about img {
     display: none;
@@ -312,6 +324,7 @@ li .link:hover {
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   body {
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     font-size: 10px;
@@ -322,19 +335,19 @@ li .link:hover {
     margin-right: 0em;
   }
 
-  nav {
-    display: none;
-  }
-
   .header-title {
     font-size: 3.6em;
     text-align: left;
-    top: 1em;
+    top: -5em;
     left: 1em;
   }
   .about {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
+  }
+  .about img {
+    display: none;
   }
 
   .about-content {
