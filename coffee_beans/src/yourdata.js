@@ -119,7 +119,10 @@ export default
             {
                 name: 'WhatsApp',
                 url: 'https://wa.me/+6590030538'
-            }
+            },
+            {name: 'Location',
+            url: 'https://www.google.com/search?rlz=1C1CHBD_enSG908SG908&tbs=lf:1,lf_ui:2&tbm=lcl&sxsrf=ALeKk00qcmN_Fd-db9kByTYSV8xf91pzPw:1605519162919&q=east+coast+park+location+tag&rflfq=1&num=10&ved=2ahUKEwjZ0or74IbtAhUzmeYKHWXVDuQQtgN6BAgTEAc'
+        }
 
         ]
     }
