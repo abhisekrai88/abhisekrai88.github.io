@@ -13,7 +13,7 @@ export default
         //Contact Email
         contactEmail:'kesihba.iar@gmail.com',
         // Add Your About Text Here
-        abouttext: "We bring you freshly roasted arabica beans straight from the mountains of Columbia which has a smooth, sweet taste, with flavour notes of chocolate and sugar",
+        abouttext: "We bring you freshly roasted arabica beans straight from the mountains of Columbia which has a smooth, sweet taste, with flavour notes of chocolate and sugar. We are located by sea in sunny Singapore where you can relax and enjoy your cup of freshly made coffee while soaking in the sun.",
         aboutImage:'https://giffiles.alphacoders.com/269/2696.gif',
        //Change This To Hide The Image of About Section (True Or False)
        ShowAboutImage:true,//true or false (Change Here)
