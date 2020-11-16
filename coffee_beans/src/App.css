@@ -59,6 +59,7 @@ nav {
 
 .navhead {
   font-family: "Snell Roundhand", cursive;
+  font-weight: bolder;
 }
 nav li {
   display: inline-block;

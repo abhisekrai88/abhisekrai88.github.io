@@ -9,7 +9,7 @@ class Header extends Component {
     render() {
         return (<div>
         <h1 className='heading-background'>
-Sorbo del Paraíso</h1>
+</h1>
             <header>
             <div class="container mt-3">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
