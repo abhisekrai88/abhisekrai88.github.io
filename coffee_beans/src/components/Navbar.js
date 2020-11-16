@@ -7,6 +7,7 @@ class Navbar extends Component {
     };
     render() { 
         return (<nav >
+            <p className="navhead">Sorbo del Paraíso</p>
             <ul>
                 <li><Link
                     className='link'

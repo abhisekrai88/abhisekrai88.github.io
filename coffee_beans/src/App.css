@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i");
 
 body {
   font-size: 16px;
-  background-image: url();
   background-color: linen;
   opacity: 80%;
   font-family: "Open Sans", sans-serif;
@@ -32,6 +32,7 @@ body {
   z-index: -100;
   color: #9352ae;
 }
+
 header {
   display: flex;
   flex-direction: row;
@@ -53,6 +54,9 @@ nav {
   opacity: 50%;
   top: 0;
   z-index: 100;
+}
+.navhead {
+  font-family: "Snell Roundhand", cursive;
 }
 nav li {
   display: inline-block;
@@ -158,6 +162,7 @@ li .link:hover {
   left: 0;
   right: 0;
   background-color: whitesmoke;
+  font-family: cursive;
   color: black;
   transform: translateY(100%);
   transition: transform 0.3s ease-in-out;
@@ -320,6 +325,7 @@ li .link:hover {
   nav {
     display: none;
   }
+
   .header-title {
     font-size: 3.6em;
     text-align: left;
