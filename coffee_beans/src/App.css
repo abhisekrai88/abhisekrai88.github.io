@@ -5,7 +5,7 @@
 body {
   font-size: 16px;
   background-color: linen;
-  opacity: 80%;
+
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
   z-index: 1;
@@ -112,7 +112,7 @@ li .link:hover {
   font-size: 2.5em;
   text-align: left;
   top: -12.5em;
-  left: 1em;
+  left: 5em;
 }
 .about {
   display: flex;

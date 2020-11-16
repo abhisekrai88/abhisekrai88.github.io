@@ -6,7 +6,7 @@ class Navbar extends Component {
         scroll.scrollToTop();
     };
     render() { 
-        return (<nav >
+        return (<div class="container-fluid"><nav >
             <p className="navhead">Sorbo del Paraíso</p>
             <ul>
                 <li><Link
@@ -47,7 +47,7 @@ class Navbar extends Component {
                     duration={500}
                 >Contact</Link></li>
             </ul>
-        </nav> );
+        </nav> </div>);
     }
 }
  

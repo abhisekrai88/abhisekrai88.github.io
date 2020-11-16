@@ -6,9 +6,10 @@ import data from '../yourdata';
 class Work extends Component {
     state = {  }
     render() { 
-        return (<><div>
+        return (<><div classname="container">
         <h1 className='heading'>
         <Fade bottom cascade>Menu.</Fade></h1>
+        <div class="container-fluid">
         <div className='work-content'>
                 {data.projects.length > 0 && data.projects.map((coffee)=>(
                     <Project key={coffee.id} {...coffee}
@@ -22,7 +23,7 @@ class Work extends Component {
                 ))}
         </div>
         
-        
+        </div>
         </div>  </>);
     }
 }

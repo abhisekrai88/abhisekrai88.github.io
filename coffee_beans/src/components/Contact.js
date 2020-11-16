@@ -5,7 +5,7 @@ import data from '../yourdata';
 class Contact extends Component {
     state = {  }
     render() { 
-        return (  <div>
+        return ( <div class="container-fluid"><div>
         <h1>
                 <Fade bottom cascade> Contact.</Fade>
         </h1>
@@ -24,7 +24,7 @@ class Contact extends Component {
         </Fade>
 
             <span className='footer'>Love <a href="https://www.linkedin.com/in/abhisek-rai-42860a92">Abhisek Rai</a></span>
-        </div>);
+        </div></div>);
     }
 }
  

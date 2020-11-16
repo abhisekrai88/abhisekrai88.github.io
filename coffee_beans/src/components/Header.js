@@ -7,7 +7,7 @@ class Header extends Component {
     state = {}
 
     render() {
-        return (<div>
+        return (<div class="container-fluid"><div>
         <h1 className='heading-background'>
 </h1>
             <header>
@@ -55,7 +55,7 @@ class Header extends Component {
 
 
 
-        </div>);
+        </div></div>);
     }
 }
 
