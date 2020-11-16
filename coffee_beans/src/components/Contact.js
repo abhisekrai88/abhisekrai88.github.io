@@ -5,7 +5,7 @@ import data from '../yourdata';
 class Contact extends Component {
     state = {  }
     render() { 
-        return ( <div class="container-fluid"><div>
+        return ( <div className="container-fluid"><div>
         <h1>
                 <Fade bottom cascade> Contact.</Fade>
         </h1>

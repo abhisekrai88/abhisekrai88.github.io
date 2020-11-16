@@ -6,7 +6,7 @@ class Navbar extends Component {
         scroll.scrollToTop();
     };
     render() { 
-        return (<div class="container-fluid"><nav >
+        return (<nav classname="navbar navbar-expand-sm sticky-top navbar-light bg-light"><div className="container-fluid">
             <p className="navhead">Sorbo del Paraíso</p>
             <ul>
                 <li><Link
@@ -47,7 +47,7 @@ class Navbar extends Component {
                     duration={500}
                 >Contact</Link></li>
             </ul>
-        </nav> </div>);
+         </div></nav>);
     }
 }
  

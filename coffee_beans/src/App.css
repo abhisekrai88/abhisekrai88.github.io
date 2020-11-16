@@ -48,7 +48,7 @@ header h1 {
 }
 nav {
   position: sticky;
-  position: -webkit-sticky;
+  position: -webkit-sticky !important;
   font-size: 20px;
   left: 60em;
   background-color: lavenderblush;
@@ -112,7 +112,7 @@ li .link:hover {
   font-size: 2.5em;
   text-align: left;
   top: -12.5em;
-  left: 5em;
+  left: 5.5em;
 }
 .about {
   display: flex;
@@ -341,8 +341,8 @@ li .link:hover {
   .header-title {
     font-size: 2.6em;
     text-align: left;
-    top: -19em;
-    left: 1em;
+    top: -24em;
+    left: 2em;
   }
   .about {
     position: relative;

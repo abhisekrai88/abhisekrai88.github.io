@@ -6,7 +6,7 @@ class Project extends Component {
     render() { 
         return ( 
         <Fade bottom>
-            <div class="container-fluid">
+            
         <div className='project'>
         <a href={this.props.url}>
             <img src={this.props.imageSrc} alt={this.props.title}></img>
@@ -14,7 +14,7 @@ class Project extends Component {
             <h1 className="name">{this.props.title}</h1>
         <span className="price">{this.props.price}</span>
             <span className="work-over">{this.props.service}</span>
-        </div> </div>
+        </div> 
             </Fade>);
     }
 }

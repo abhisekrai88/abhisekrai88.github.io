@@ -6,10 +6,10 @@ import data from '../yourdata';
 class Work extends Component {
     state = {  }
     render() { 
-        return (<><div classname="container">
+        return (<><div className="">
         <h1 className='heading'>
         <Fade bottom cascade>Menu.</Fade></h1>
-        <div class="container-fluid">
+        <div className="d-flex justify-content-center">
         <div className='work-content'>
                 {data.projects.length > 0 && data.projects.map((coffee)=>(
                     <Project key={coffee.id} {...coffee}
