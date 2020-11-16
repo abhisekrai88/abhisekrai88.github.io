@@ -170,6 +170,7 @@ li .link:hover {
   left: 0;
   right: 0;
   background-color: whitesmoke;
+  opacity: 90%;
   font-family: cursive;
   color: black;
   transform: translateY(100%);
@@ -255,17 +256,18 @@ li .link:hover {
   .heading-background {
     display: none;
   }
+  .header-title button {
+    display: none;
+  }
   nav {
     justify-content: center;
     text-align: center;
   }
   .header-title {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 3em;
+    font-size: 2em;
     text-align: left;
-    top: 5em;
-    left: 1em;
+    top: -40em;
+    left: 33em;
   }
   .about {
     position: relative;
@@ -328,7 +330,7 @@ li .link:hover {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    font-size: 10px;
+    font-size: 8px;
   }
   header h1 {
     font-size: 5em;
@@ -352,12 +354,13 @@ li .link:hover {
   }
 
   .about-content {
-    left: 6em;
+    left: 1em;
   }
   .about-content p {
-    font-size: 3.5em;
+    font-size: 2.6em;
     text-align: left;
-    width: 700px;
+    top: -19em;
+    left: 1em;
   }
 
   .work {
