@@ -2,31 +2,31 @@ export default
     {
         //(Please Do Not Remove The comma(,) after every variable)
         //Change The Website Template
-        name :'',
+        name: '',
         headerTagline: [//Line 1 For Header
-                        'Welcome to Sorbo del Paraíso',
-                        //Line 2 For Header
-                        'You dont have to be in paradise to taste paradise'
-                        //Line 3 For Header
-                        
-    ],
+            'Welcome to Sorbo del Paraíso',
+            //Line 2 For Header
+            'You dont have to be in paradise to taste paradise'
+            //Line 3 For Header
+
+        ],
         //Contact Email
-        contactEmail:'kesihba.iar@gmail.com',
+        contactEmail: 'kesihba.iar@gmail.com',
         // Add Your About Text Here
         abouttext: "We bring you freshly roasted arabica beans straight from the mountains of Columbia which has a smooth, sweet taste, with flavour notes of chocolate and sugar. We are located by sea in sunny Singapore where you can relax and enjoy your cup of freshly made coffee while soaking in the sun. We are open 24/7 to serve everyone anytime.",
-        aboutImage:'https://giffiles.alphacoders.com/269/2696.gif',
-       //Change This To Hide The Image of About Section (True Or False)
-       ShowAboutImage:true,//true or false (Change Here)
-        
-       projects:[
-           {
-            id: 1,
-            name:'Caffe Latte', //Project Title - Add Your Project Title Here
-             description:'Our dark, rich espresso balanced with steamed milk and a light layer of foam. A perfect milk forward warm up.', // Add Your Service Type Here
-            //Project Image - Add Your Project Image Here
-             imageSrc:"https://assets.mystarbucks.com.au/imagecache/bestfit/620x634/_files/Beverages/caffe_latte.jpg",
-             price: 3.65,
-             url: "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_caffe-latte.jpg"
+        aboutImage: 'https://giffiles.alphacoders.com/269/2696.gif',
+        //Change This To Hide The Image of About Section (True Or False)
+        ShowAboutImage: true,//true or false (Change Here)
+
+        projects: [
+            {
+                id: 1,
+                name: 'Caffe Latte', //Project Title - Add Your Project Title Here
+                description: 'Our dark, rich espresso balanced with steamed milk and a light layer of foam. A perfect milk forward warm up.', // Add Your Service Type Here
+                //Project Image - Add Your Project Image Here
+                imageSrc: "https://assets.mystarbucks.com.au/imagecache/bestfit/620x634/_files/Beverages/caffe_latte.jpg",
+                price: 'S$3.65',
+                url: "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_caffe-latte.jpg"
             },
             {
                 id: 2,
@@ -36,7 +36,7 @@ export default
                 price: 'S$4.15',
                 url: "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_mocha.jpg"
             },
-            { 
+            {
                 id: 3,
                 name: 'Flat White',
                 description: 'Bold ristretto shots of espresso get the perfect amount of steamed whole milk to create a not too strong, not too creamy, just right flavor.',
@@ -51,8 +51,8 @@ export default
                 imageSrc: "https://www.nespresso.com/ncp/resizer.php?width=400&height=300&file=uploads%2Frecipes%2Fnespresso-recipes-Espresso-Macchiato.jpg&token=1f19807fb0f3e5910dfdfc33d70ddf9e",
                 price: 'S$3.55',
                 url: "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_macchiato.jpg"
-           }
-           ,
+            }
+            ,
             {
                 id: 5,
                 name: 'Long Black',
@@ -60,8 +60,8 @@ export default
                 imageSrc: "https://cdn.shopify.com/s/files/1/0258/0329/2747/products/Short_Black_20172049-8fda-437d-9107-2d13d83dbecc_300x300.jpg?v=1580089827",
                 price: 'S$4.45',
                 url: "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_long-black.jpg"
-           }
-           ,
+            }
+            ,
             {
                 id: 6,
                 name: 'Cortado',
@@ -70,8 +70,8 @@ export default
                 price: 'S$3.35',
                 url: "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_cortado.jpg"
 
-           }
-           ,
+            }
+            ,
             {
                 id: 7,
                 name: 'Cappuccino',
@@ -79,8 +79,8 @@ export default
                 imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTqQoj_m1d2I7Birf8vkkeXKJu7OZZA4nThyQ&usqp=CAU",
                 price: 'S$6.55',
                 url: "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_cappuccino.jpg"
-           }
-           ,
+            }
+            ,
             {
                 id: 8,
                 name: 'Affogato',
@@ -89,13 +89,15 @@ export default
                 price: 'S$7.55',
                 url: "https://cdnimg.webstaurantstore.com/uploads/blog/2019/4/coffee-drinks_affogato.jpg"
 
-           }
-          
+            }
+
         ],
         social: [
             // Add Or Remove The Link Accordingly
-            {   name:'Github',
-                url:'https://github.com/abhisekrai88/introtodev.git'},
+            {
+                name: 'Github',
+                url: 'https://github.com/abhisekrai88/introtodev.git'
+            },
             {
                 name: 'LinkedIN',
                 url: 'https://www.linkedin.com/in/abhisek-rai-42860a92'
@@ -108,9 +110,10 @@ export default
                 name: 'WhatsApp',
                 url: 'https://wa.me/+6590030538'
             },
-            {name: 'Location',
-            url: 'https://www.google.com/search?rlz=1C1CHBD_enSG908SG908&tbs=lf:1,lf_ui:2&tbm=lcl&sxsrf=ALeKk00qcmN_Fd-db9kByTYSV8xf91pzPw:1605519162919&q=east+coast+park+location+tag&rflfq=1&num=10&ved=2ahUKEwjZ0or74IbtAhUzmeYKHWXVDuQQtgN6BAgTEAc'
-        }
+            {
+                name: 'Location',
+                url: 'https://www.google.com/search?rlz=1C1CHBD_enSG908SG908&tbs=lf:1,lf_ui:2&tbm=lcl&sxsrf=ALeKk00qcmN_Fd-db9kByTYSV8xf91pzPw:1605519162919&q=east+coast+park+location+tag&rflfq=1&num=10&ved=2ahUKEwjZ0or74IbtAhUzmeYKHWXVDuQQtgN6BAgTEAc'
+            }
 
         ]
     }
