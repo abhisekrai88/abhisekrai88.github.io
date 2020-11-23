@@ -11,6 +11,7 @@ class Header extends Component {
       <h1 className='heading-background'>
       </h1>
       <header>
+      <div className="jumbotron jumbotron-fluid">
         <div className="container mt-3">
           <div id="myCarousel" className="carousel slide" data-ride="carousel">
             <h1>
@@ -42,7 +43,7 @@ class Header extends Component {
         </div>
 
 
-
+</div>
       </header>
       <Fade bottom>
         <p className='header-title'>
