@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
-import data from '../yourdata'
+import data from '../yourdata';
+import Typical from 'react-typical';
 
 
 class Header extends Component {
   state = {}
 
   render() {
-    return (<div className="container-fluid"><div>
-      <h1 className='heading-background'>
-      </h1>
+    return (
+    <div className="container-fluid"><div>
+      <h1 className='heading-background'><Typical steps={['Sorbo', 1000, 'del',1000, 'Paraíso', 1000, 'Sorbo del Paraíso', 3000]} loop={Infinity}/>
+      </h1> 
+     
       <header>
-      <div className="jumbotron jumbotron-fluid">
+     
         <div className="container mt-3">
           <div id="myCarousel" className="carousel slide" data-ride="carousel">
             <h1>
@@ -43,7 +46,7 @@ class Header extends Component {
         </div>
 
 
-</div>
+
       </header>
       <Fade bottom>
         <p className='header-title'>

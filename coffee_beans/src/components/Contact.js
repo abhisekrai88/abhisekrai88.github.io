@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
 import data from '../yourdata';
+import Typical from 'react-typical';
 
 
 class Contact extends Component {
@@ -24,9 +25,9 @@ class Contact extends Component {
         </div>
         </Fade>
 
-           <span className='footer'> <a href="https://www.linkedin.com/in/abhisek-rai-42860a92">Abhisek Rai</a></span>
+           <span className='footer'>Love, <a href="https://www.linkedin.com/in/abhisek-rai-42860a92"><Typical steps={['Abhisek Rai',2000]} loop={Infinity}/></a></span>
           
-        
+           
         </div></div>);
     }
 }
